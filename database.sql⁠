@@ -1,0 +1,21 @@
+-- Criação da tabela de Licenças do AC Supremo
+CREATE TABLE IF NOT EXISTS ac_licencas (
+    id SERIAL PRIMARY KEY,
+    ip_servidor VARCHAR(45) NOT NULL,
+    token_servidor VARCHAR(255) UNIQUE NOT NULL,
+    plano VARCHAR(50) NOT NULL,
+    status VARCHAR(20) DEFAULT 'ativa', -- ativa, suspensa, revogada
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expira_em TIMESTAMP NOT NULL
+);
+
+-- Criação da tabela de Dossiês Forenses (Logs e Prints)
+CREATE TABLE IF NOT EXISTS ac_dossies (
+    id SERIAL PRIMARY KEY,
+    license VARCHAR(64) NOT NULL,
+    discord_id VARCHAR(32),
+    motivo_punicao TEXT NOT NULL,
+    print_url TEXT,
+    dados_json JSONB,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

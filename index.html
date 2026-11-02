@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxy Pay - AC Supremo v3.1.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+        }
+        .glass-card {
+            background: rgba(18, 18, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-purple-500/30 flex items-center justify-center p-1 glow-effect">
+                    <i class="fa-solid fa-shield-halved text-purple-400 text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-wider text-white">LUXY <span class="text-purple-400">PAY</span></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="hidden sm:flex items-center gap-3 text-sm text-zinc-300">
+                    <span class="bg-zinc-900 border border-zinc-700 px-3 py-1.5 rounded-xl flex items-center gap-2">
+                        <i class="fa-brands fa-tiktok text-cyan-400"></i> @eoo_gomes3
+                    </span>
+                    <span class="bg-zinc-900 border border-zinc-700 px-3 py-1.5 rounded-xl flex items-center gap-2">
+                        <i class="fa-brands fa-discord text-indigo-400"></i> pedro_gomes631
+                    </span>
+                </div>
+                <a href="#planos" class="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 shadow-lg shadow-purple-950/50">
+                    Ver Planos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-12 pb-20 px-4 max-w-7xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-950/40 border border-purple-500/30 text-purple-300 text-sm mb-6">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Lançamento Exclusivo v3.1.0
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+            A Proteção Definitiva para o seu Servidor: <br>
+            <span class="text-gradient">AC Supremo v3.1.0</span>
+        </h1>
+        <p class="text-zinc-400 max-w-3xl mx-auto text-lg mb-10">
+            Validação remota de licenças instantânea, Resmon zerado (0.00ms), Anti-Spoofer profundo e automação comercial integrada via Discord Bot e Dashboard Web SaaS.
+        </p>
+
+        <!-- Product Highlight Card -->
+        <div class="glass-card rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto text-left glow-cyan border-cyan-500/20">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 pb-6 border-b border-zinc-800">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                        🔥 AC Supremo v3.1.0
+                    </h2>
+                    <p class="text-zinc-400 text-sm">Pacote completo de infraestrutura e anticheat para FiveM</p>
+                </div>
+                <a href="#planos" class="bg-cyan-500 hover:bg-cyan-400 text-zinc-950 font-bold px-6 py-3 rounded-xl transition">
+                    Ver Tabela de Preços
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-zinc-300">
+                <div class="space-y-2">
+                    <p>🌐 <strong>API Master Dedicada:</strong> Node.js + PostgreSQL com HMAC</p>
+                    <p>💻 <strong>Dashboard Web SaaS:</strong> Gestão visual e métricas do servidor</p>
+                    <p>🤖 <strong>Bot Discord:</strong> Automação comercial com entrega de licença</p>
+                </div>
+                <div class="space-y-2">
+                    <p>🖥️ <strong>Launcher Windows (C#):</strong> Verificação transparente de hashes</p>
+                    <p>🛡️ <strong>Anti-Spoofer & Resmon:</strong> 0.00ms com captura de Steam, Discord e HWID</p>
+                    <p>📦 <strong>Dossiês Forenses:</strong> Logs JSON completos com prints HD</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">Tabela de Preços Exatos</h2>
+            <p class="text-zinc-400">Escolha o plano ideal e finalize o pagamento via PIX chamando no WhatsApp</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Mensal -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-zinc-800 hover:border-purple-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Plano Mensal</h3>
+                    <p class="text-xs text-zinc-400 mb-4">Standard (30 dias)</p>
+                    <div class="text-3xl font-extrabold text-white mb-6">R$ 69,90 <span class="text-xs font-normal text-zinc-400">/mês</span></div>
+                    <ul class="text-sm text-zinc-300 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> 1 Licença por 30 dias</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Vinculado a 1 IP/Token</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Atualizações e Suporte</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5581999152083?text=Olá!%20Quero%20adquirir%20o%20AC%20Supremo%20v3.1.0%20-%20Plano%20Mensal%20(R$%2069,90)." target="_blank" class="w-full bg-zinc-800 hover:bg-emerald-600 text-white font-semibold py-3 rounded-xl transition text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Comprar via WhatsApp
+                </a>
+            </div>
+
+            <!-- Trimestral -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-zinc-800 hover:border-purple-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Plano Trimestral</h3>
+                    <p class="text-xs text-zinc-400 mb-4">Economia garantida (90 dias)</p>
+                    <div class="text-3xl font-extrabold text-white mb-6">R$ 179,90 <span class="text-xs font-normal text-zinc-400">/3 meses</span></div>
+                    <ul class="text-sm text-zinc-300 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> 90 dias de licença contínua</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Desconto de fidelidade</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Suporte Prioritário</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5581999152083?text=Olá!%20Quero%20adquirir%20o%20AC%20Supremo%20v3.1.0%20-%20Plano%20Trimestral%20(R$%20179,90)." target="_blank" class="w-full bg-zinc-800 hover:bg-emerald-600 text-white font-semibold py-3 rounded-xl transition text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Comprar via WhatsApp
+                </a>
+            </div>
+
+            <!-- Vitalício -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-purple-500/50 glow-effect relative">
+                <span class="absolute -top-3 right-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Mais Popular</span>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Licença Vitalícia</h3>
+                    <p class="text-xs text-zinc-400 mb-4">Pagamento único</p>
+                    <div class="text-3xl font-extrabold text-white mb-6">R$ 399,90 <span class="text-xs font-normal text-zinc-400">/único</span></div>
+                    <ul class="text-sm text-zinc-300 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Acesso vitalício por servidor</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Sem mensalidades</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Atualizações da v3.x</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5581999152083?text=Olá!%20Quero%20adquirir%20o%20AC%20Supremo%20v3.1.0%20-%20Licença%20Vitalícia%20(R$%20399,90)." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Comprar Vitalício
+                </a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-cyan-500/30 hover:border-cyan-500/60 transition">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
+                    <p class="text-xs text-zinc-400 mb-4">Para redes de servidores</p>
+                    <div class="text-3xl font-extrabold text-white mb-6">R$ 1.499,90 <span class="text-xs font-normal text-zinc-400">/único</span></div>
+                    <ul class="text-sm text-zinc-300 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Múltiplas cidades/IPs</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Suporte Vip 24/7 dedicado</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Personalização inclusa</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5581999152083?text=Olá!%20Quero%20adquirir%20o%20AC%20Supremo%20v3.1.0%20-%20Plano%20Enterprise%20(R$%201.499,90)." target="_blank" class="w-full bg-zinc-800 hover:bg-emerald-600 text-white font-semibold py-3 rounded-xl transition text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Comprar via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800/80 bg-zinc-950 py-8 px-4 text-center text-zinc-500 text-sm space-y-2">
+        <p>&copy; 2026 Luxy Pay. Todos os direitos reservados. Chave PIX / Contato: 81 99915-2083</p>
+        <div class="flex justify-center gap-4 text-xs text-zinc-400">
+            <span>TikTok: <strong class="text-cyan-400">@eoo_gomes3</strong></span>
+            <span>•</span>
+            <span>Discord: <strong class="text-indigo-400">pedro_gomes631</strong></span>
+        </div>
+    </footer>
+
+</body>
+</html>
